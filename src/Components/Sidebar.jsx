@@ -15,6 +15,10 @@ const Sidebar = () => {
   const { theme } = useTheme();
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
+  const currentUser = auth.user.username
+  const tasks = JSON.parse(localStorage.getItem(currentUser+"_tasks")) || [];
+  const completedTasks = tasks.filter((task) => task.completed === true);
+  const pendingTasks = tasks.filter((task) => task.completed !== true);
   const handleLogout = () => {
     dispatch(logout());
     window.location.reload();
@@ -67,7 +71,7 @@ const Sidebar = () => {
         <div className="flex justify-between px-3 py-2">
             <div className="flex flex-col">
                 <span className="text-xs">Today Tasks</span>
-                <span className="text-xl font-semibold">11</span>
+                <span className="text-xl font-semibold">{completedTasks.length + pendingTasks.length}</span>
             </div>
             <span className="w-4"><img src={info_img} alt="info_icon" /></span>
         </div>
@@ -76,11 +80,11 @@ const Sidebar = () => {
                 data={[
                     {
                         label: "Pending",
-                        value: 10,
+                        value: pendingTasks.length,
                     },
                     {
                         label: "Completed",
-                        value: 5,
+                        value: completedTasks.length,
                     }
                 ]}
                 colors={[
