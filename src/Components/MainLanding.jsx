@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useTheme } from "../Contexts/ThemeContext";
-import themeJson from "../constants/Themes.json";
+import themeJson from "../Constants/Themes.json";
 import { useSelector } from "react-redux";
 import RightPane from "./RightPane";
 
