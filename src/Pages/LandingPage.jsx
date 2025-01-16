@@ -7,7 +7,7 @@ import MainLanding from "../Components/MainLanding";
 import LoginRegister from "../Components/LoginRegister";
 import { useTheme } from "../Contexts/ThemeContext";
 import { useSidebar } from "../Contexts/SidebarContext";
-import themeJson from "../Constants/Themes.json";
+import themeJson from "../constants/Themes.json";
 
 const LandingPage = () => {
   const { theme } = useTheme();
