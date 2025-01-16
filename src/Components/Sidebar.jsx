@@ -15,7 +15,7 @@ const Sidebar = () => {
   const { theme } = useTheme();
   const dispatch = useDispatch();
   const auth = useSelector((state) => state.auth);
-  const currentUser = auth.user.username || ""
+  const currentUser = auth?.user?.username || "";
   const tasks = JSON.parse(localStorage.getItem(currentUser+"_tasks")) || [];
   const completedTasks = tasks.filter((task) => task.completed === true);
   const pendingTasks = tasks.filter((task) => task.completed !== true);
