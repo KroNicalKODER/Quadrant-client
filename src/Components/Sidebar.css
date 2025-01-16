@@ -1,0 +1,7 @@
+.donut-chart{
+    max-height: 220px;
+}
+
+.donut-chart-arcs{
+    transform: translateY(-120px);
+}

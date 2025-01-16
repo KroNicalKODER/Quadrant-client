@@ -1,0 +1,15 @@
+.react-calendar__navigation{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-pane hr{
+    height: 0.1px;
+    border: none;
+}

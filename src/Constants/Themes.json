@@ -1,0 +1,35 @@
+{
+    "light": {
+      "background": "#FBFDFC",
+      "sidebar_bg": "#EEF6EF",
+      "sidebar_text": "#1B281B",
+      "sidebar_selected_bg": "#35793729",
+      "sidebar_selected_text": "#357937",
+      "sidebar_chart_pending": "#3F9142",
+      "sidebar_chart_completed": "#142E15",
+      "sidebar_tabs_bg": "#FBFDFC",
+      "checkbox_bg": "#347936",
+      "add_task_btn": "#35793729",
+      "add_task_btn_text": "#357937",
+      "add_task_bg_style": {
+        "background": "linear-gradient(358.24deg, rgba(53, 121, 55, 0.1) 1.27%, rgba(208, 255, 210, 0.1) 98.29%)"
+      }
+    },
+    "dark": {
+      "background": "#242424",
+      "sidebar_bg": "#2C2C2C",
+      "sidebar_text": "#E2E2E2",
+      "sidebar_tabs_bg": "#232323",
+      "sidebar_selected_bg": "#35793729",
+      "sidebar_selected_text": "#98E19B",
+      "sidebar_chart_pending": "#3F9142",
+      "sidebar_chart_completed": "#A0EDA4",
+      "checkbox_bg": "#347936",
+      "add_task_btn": "#357937E0",
+      "add_task_btn_text": "#CFCFCF",
+      "add_task_bg_style": {
+        "background": "#2F3630"
+      }
+    }
+  }
+  
